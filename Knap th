@@ -1,0 +1,91 @@
+Group A 
+Assignment No: 3 
+Title of the Assignment: Write a program to solve a fractional Knapsack problem using a greedy 
+method. 
+Objective of the Assignment: Students should be able to understand and solve fractional Knapsack 
+problems using a greedy method. 
+Prerequisite: 
+1. Basic of Python or Java Programming 
+2. Concept of Greedy method 
+3. fractional Knapsack problem 
+--------------------------------------------------------------------------------------------------------------- 
+Contents for Theory: 
+1. Greedy Method
+2. Fractional Knapsack problem
+3. Example solved using fractional Knapsack problem
+
+What is a Greedy Method?
+● A greedy algorithm is an approach for solving a problem by selecting the best option available 
+at the moment. It doesn't worry whether the current best result will bring the overall optimal 
+result.
+● The algorithm never reverses the earlier decision even if the choice is wrong. It works in a top-
+down approach.
+● This algorithm may not produce the best result for all the problems. It's because it always goes 
+for the local best choice to produce the global best result.
+Advantages of Greedy Approach
+● The algorithm is easier to describe. ● This algorithm can perform better than other algorithms (but, not in all cases).
+Drawback of Greedy Approach
+● As mentioned earlier, the greedy algorithm doesn't always produce the optimal solution. This is 
+the major disadvantage of the algorithm
+● For example, suppose we want to find the longest path in the graph below from root to leaf.
+Greedy Algorithm
+1. To begin with, the solution set (containing answers) is empty.
+2. At each step, an item is added to the solution set until a solution is reached.
+3. If the solution set is feasible, the current item is kept.
+4. Else, the item is rejected and never considered again.
+Knapsack Problem
+You are given the following-
+● A knapsack (kind of shoulder bag) with limited weight capacity.
+
+Department of Computer Engineering Course : Laboratory Practice III
+P.G. Moze College of Engineering, Wagholi, Pune 
+● Few items each having some weight and value.
+The problem states-
+Which items should be placed into the knapsack such that-
+● The value or profit obtained by putting the items into the knapsack is maximum.
+● And the weight limit of the knapsack does not exceed.
+Knapsack Problem Variants
+Knapsack problem has the following two variants-
+1. Fractional Knapsack Problem
+2. 0/1 Knapsack Problem
+Fractional Knapsack Problem-
+In Fractional Knapsack Problem,
+● As the name suggests, items are divisible here.
+● We can even put the fraction of any item into the knapsack if taking the complete item is not
+
+possible.
+● It is solved using the Greedy Method.
+Fractional Knapsack Problem Using Greedy Method-
+Fractional knapsack problem is solved using greedy method in the following steps-
+Step-01:
+For each item, compute its value / weight ratio.
+Step-02:
+Arrange all the items in decreasing order of their value / weight ratio.
+Step-03:
+Start putting the items into the knapsack beginning from the item with the highest ratio. 
+Put as many items as you can into the knapsack.
+Problem-
+For the given set of items and knapsack capacity = 60 kg, find the optimal solution for the fractional 
+knapsack problem making use of greedy approach.
+
+Now,
+● Knapsack weight left to be filled is 20 kg but item-4 has a weight of 22 kg.
+● Since in fractional knapsack problem, even the fraction of any item can be taken.
+● So, knapsack will contain the following items-
+< I1 , I2 , I5 , (20/22) I4 >
+Total cost of the knapsack
+= 160 + (20/22) x 77
+= 160 + 70
+= 230 units
+Time Complexity-
+● The main time taking step is the sorting of all items in decreasing order of their value / weight ratio.
+● If the items are already arranged in the required order, then while loop takes O(n) time.
+● The average time complexity of Quick Sort is O(nlogn).
+● Therefore, total time taken including the sort is O(nlogn).
+
+Conclusion-In this way we have explored Concept of Fractional Knapsack using greedy method
+Assignment Question 
+1. What is Greedy Approach? 
+2. Explain concept of fractional knapsack 
+3. Difference between Fractional and 0/1 Knapsack 
+4. Solve one example based on Fractional knapsack(Other than Manual)
